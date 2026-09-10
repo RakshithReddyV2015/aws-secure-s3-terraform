@@ -1,3 +1,4 @@
+# S3 bucket managed by Terraform
 terraform {
   required_providers {
     aws = {
