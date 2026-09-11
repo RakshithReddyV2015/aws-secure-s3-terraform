@@ -7,3 +7,8 @@ output "s3_bucket_arn" {
   description = "ARN of the S3 bucket"
   value       = aws_s3_bucket.data_bucket.arn
 }
+
+output "glue_s3_role_arn" {
+  description = "ARN of the IAM role used by AWS Glue"
+  value       = aws_iam_role.glue_s3_role.arn
+}
