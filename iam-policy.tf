@@ -26,6 +26,15 @@ resource "aws_iam_policy" "s3_data_access" {
         ]
 
         Resource = "${aws_s3_bucket.data_bucket.arn}/*"
+      },
+      {
+        Effect = "Allow"
+
+        Action = [
+          "s3:DeleteObject"
+        ]
+
+        Resource = "${aws_s3_bucket.data_bucket.arn}/processed/*"
       }
     ]
   })
