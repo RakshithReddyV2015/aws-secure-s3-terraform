@@ -1,82 +1,28 @@
-\# AWS Secure S3 Infrastructure with Terraform
+end-to-end AWS data engineering pipeline, including:
 
 
 
-This project provisions and manages a secure Amazon S3 bucket using Terraform.
+Terraform infrastructure
 
+S3
 
+IAM
 
-The project demonstrates practical AWS cloud infrastructure concepts including:
+Glue Catalog
 
+Glue Crawler
 
+Glue ETL
 
-\- S3 versioning
+CloudWatch logging
 
-\- Server-side encryption
+Processed S3 data
 
-\- Public access protection
+Snowflake Storage Integration
 
-\- Object ownership controls
+Snowflake external stage
 
-\- Lifecycle management
+COPY INTO
 
-\- Resource tagging
-
-\- Infrastructure as Code using Terraform
-
-\- Git and GitHub feature branch workflow
-
-
-
-\## Architecture
-
-
-
-!\[AWS Secure S3 Terraform Architecture](architecture-diagram.png)
-
-
-
-\## Project Overview
-
-
-
-The goal of this project is to demonstrate how AWS S3 infrastructure can be securely provisioned and managed using Terraform.
-
-
-
-Terraform is used to create and configure the S3 bucket and its supporting security and lifecycle configurations.
-
-
-
-The infrastructure is divided into multiple Terraform files to keep the configuration organized and easier to maintain.
-
-
-
-\## AWS Services
-
-
-
-\### Amazon S3
-
-
-
-Amazon S3 provides the object storage used by this project.
-
-
-
-The bucket is configured with:
-
-
-
-\- Versioning
-
-\- Server-side encryption
-
-\- Public access blocking
-
-\- Bucket ownership controls
-
-\- Lifecycle management
-
-\- Resource tags
+Data transformation
 
