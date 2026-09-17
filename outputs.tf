@@ -12,3 +12,8 @@ output "glue_s3_role_arn" {
   description = "ARN of the IAM role used by AWS Glue"
   value       = aws_iam_role.glue_s3_role.arn
 }
+
+output "snowflake_s3_role_arn" {
+  description = "ARN of the IAM role used by Snowflake to access S3"
+  value       = aws_iam_role.snowflake_s3_role.arn
+}
